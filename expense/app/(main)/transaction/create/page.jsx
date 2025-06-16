@@ -18,9 +18,10 @@ const AddTransactionPage = async ({searchParams}) => {
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
-        <h1 className= "text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text" >
-            {editId?"Edit":"Add"}Transaction
-        </h1>
+       <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
+  {editId ? "Edit" : "Add"} Transaction
+</h1>
+
         <AddTransactionForm
         accounts={accounts}
         categories={defaultCategories}
